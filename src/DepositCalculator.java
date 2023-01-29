@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+//здесь, вероятно, надо более понятные названия переменных поставить
 public class DepositCalculator {
     double calculateComplexPercent(double a, double y, int d) {
         double pay = a * Math.pow((1 + y / 12), 12 * d);
@@ -10,11 +11,13 @@ public class DepositCalculator {
         return Year(amount + amount * yearRate * depositPeriod, 2);
     }
 
+/*В этом блоке нужно исправить название переменной - 
+- поменять заглавную L на прописную l. */
     double Year(double value, int places) {
         double ScaLe = Math.pow(10, places);
         return Math.round(value * ScaLe) / ScaLe;
     }
-
+//здесь рекомендовалось поменять название метода
     void doImportantJob() {
         int period;
         int action;
@@ -41,3 +44,4 @@ public class DepositCalculator {
         new DepositCalculator().doImportantJob();
     }
 }
+//В целом, хорошо.)
